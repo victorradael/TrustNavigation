@@ -1,4 +1,5 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
+import { number } from '@hapi/joi';
 
 export default class CreateAppointments1586815343571
   implements MigrationInterface {
@@ -19,6 +20,17 @@ export default class CreateAppointments1586815343571
             type: 'varchar',
             isNullable: false,
           },
+          {
+            name: 'latitude',
+            type: 'varchar',
+            isNullable: false,
+          },
+          {
+            name: 'longitude',
+            type: 'varchar',
+            isNullable: false,
+          },
+
           {
             name: 'date',
             type: 'timestamp with time zone',

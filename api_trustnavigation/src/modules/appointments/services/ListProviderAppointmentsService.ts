@@ -35,9 +35,9 @@ export default class ListProviderAppointmentsService {
     if (!appointments) {
       appointments = await this.appointmentsRepository.findAllInDayFromProvider(
         {
+          provider_id,
           day,
           month,
-          provider_id,
           year,
         }
       );

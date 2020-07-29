@@ -1,5 +1,6 @@
 export default interface ICreateAppointmentDTO {
-  provider_id: string;
+  latitude: number;
+  longitude: number;
   user_id: string;
   date: Date;
 }
