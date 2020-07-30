@@ -23,6 +23,12 @@ class Appointment {
   user: User;
 
   @Column()
+  category: string;
+
+  @Column()
+  description: string;
+
+  @Column()
   latitude: number;
 
   @Column()

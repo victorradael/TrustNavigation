@@ -44,12 +44,16 @@ class AppointmentsRepository implements IAppointmentsRepository {
   }
 
   public async create({
+    category,
+    description,
     latitude,
     longitude,
     user_id,
     date,
   }: ICreateAppointmentDTO): Promise<Appointment> {
     const appointment = await this.ormRepository.create({
+      category,
+      description,
       latitude,
       longitude,
       user_id,
